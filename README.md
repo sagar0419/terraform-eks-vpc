@@ -47,7 +47,7 @@ The AWS credentials must be associated with a user having at least the following
 ```
 ### Details about repo \
 
-[![N|Solid] https://www.wallpaperflare.com/naruto-kakashi-hatake-wallpaper-ynmek 
+[![N|Solid](https://www.wallpaperflare.com/naruto-kakashi-hatake-wallpaper-ynmek)
 
 - This repo contains code to create a Hybrid VPC and eks cluster with terraform. 
 - All the variables are defined in vars.tf if you want to pass your variable add them in terraform.tfvars file. 
