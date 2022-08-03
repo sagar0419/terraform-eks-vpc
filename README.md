@@ -66,6 +66,7 @@ To create infra run the below mention command
 
 |TIP: you should save the plan state terraform plan -out eks-state or even better yet, setup remote storage for [Terraform state](https://www.terraform.io/language/state/remote). You can store state in an [S3 backend](https://www.terraform.io/language/settings/backends/s3), with locking via DynamoDB | 
 
+
 ### Setup Kubectl
 - Setup your <mark>KUBECONFIG</mark>
 - terraform output kubeconfig > ~/.kube/eks-cluster
@@ -73,6 +74,7 @@ To create infra run the below mention command
 - Edit '~/.kube/eks-cluster' file and remove EOT from begining and end of the file.
 
 ## Authorize users to access the cluster 
+
 
 Initially, only the system that deployed the cluster will be able to access the cluster. To authorize other users for accessing the cluster, aws-auth config needs to be modified by using the steps given below: 
 
