@@ -66,7 +66,6 @@ To create infra run the below mention command
 
 |TIP: you should save the plan state terraform plan -out eks-state or even better yet, setup remote storage for [Terraform state](https://www.terraform.io/language/state/remote). You can store state in an [S3 backend](https://www.terraform.io/language/settings/backends/s3), with locking via DynamoDB | 
 
-
 ### Setup Kubectl
 - Setup your <mark>KUBECONFIG</mark>
 - terraform output kubeconfig > ~/.kube/eks-cluster
