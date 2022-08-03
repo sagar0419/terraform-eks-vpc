@@ -49,17 +49,36 @@ variable "public-cidr-2" {
   default     = "10.0.2.0/24"
   description = "Public subnet-2"
 }
-variable "private-cidr-3" {
+variable "public-cidr-3" {
   type        = string
   default     = "10.0.3.0/24"
-  description = "private subnet-3"
+  description = "Public subnet-3"
 }
-variable "private-cidr-4" {
+variable "public-cidr-4" {
   type        = string
   default     = "10.0.4.0/24"
-  description = "Private subnet-4"
+  description = "Public subnet-4"
 }
-
+variable "private-cidr-5" {
+  type        = string
+  default     = "10.0.5.0/24"
+  description = "Private subnet-5"
+}
+variable "private-cidr-6" {
+  type        = string
+  default     = "10.0.6.0/24"
+  description = "Private subnet-6"
+}
+variable "private-cidr-7" {
+  type        = string
+  default     = "10.0.7.0/24"
+  description = "Private subnet-7"
+}
+variable "private-cidr-8" {
+  type        = string
+  default     = "10.0.8.0/24"
+  description = "Private subnet-8"
+}
 ##Cluster Variabels
 variable "cluster-name" {
   type        = string

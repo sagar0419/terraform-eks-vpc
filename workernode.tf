@@ -2,7 +2,7 @@ resource "aws_eks_node_group" "eks-worker" {
   cluster_name    = aws_eks_cluster.cluster.name
   node_group_name = var.nodegroup-name
   node_role_arn   = aws_iam_role.worker.arn
-  subnet_ids      = [aws_subnet.subnet_id_3.id, aws_subnet.subnet_id_4.id]
+  subnet_ids      = [aws_subnet.subnet_id_5.id, aws_subnet.subnet_id_6.id, aws_subnet.subnet_id_7.id, aws_subnet.subnet_id_8.id]
 
   scaling_config {
     desired_size = var.desired_size
