@@ -17,6 +17,7 @@ resource "aws_subnet" "subnet_id_1" {
   availability_zone = var.zone-1
   tags = {
     Name = "${local.tag}-public-subnet1"
+    "kubernetes.io/role/elb" = "1"
   }
 }
 resource "aws_subnet" "subnet_id_2" {
@@ -25,6 +26,7 @@ resource "aws_subnet" "subnet_id_2" {
   availability_zone = var.zone-2
   tags = {
     Name = "${local.tag}-public-subnet2"
+    "kubernetes.io/role/elb" = "1"
   }
 }
 
@@ -34,6 +36,7 @@ resource "aws_subnet" "subnet_id_3" {
   availability_zone = var.zone-3
   tags = {
     Name = "${local.tag}-public-subnet3"
+    "kubernetes.io/role/elb" = "1"
   }
 }
 resource "aws_subnet" "subnet_id_4" {
@@ -42,6 +45,7 @@ resource "aws_subnet" "subnet_id_4" {
   availability_zone = var.zone-4
   tags = {
     Name = "${local.tag}-public-subnet4"
+    "kubernetes.io/role/elb" = "1"
   }
 }
 
@@ -51,6 +55,7 @@ resource "aws_subnet" "subnet_id_5" {
   availability_zone = var.zone-1
   tags = {
     Name = "${local.tag}-private-subnet1"
+    "kubernetes.io/role/internal-elb" = "1"
   }
 }
 resource "aws_subnet" "subnet_id_6" {
@@ -59,6 +64,7 @@ resource "aws_subnet" "subnet_id_6" {
   availability_zone = var.zone-2
   tags = {
     Name = "${local.tag}-private-subnet2"
+    "kubernetes.io/role/internal-elb" = "1"
   }
 }
 
@@ -68,6 +74,7 @@ resource "aws_subnet" "subnet_id_7" {
   availability_zone = var.zone-3
   tags = {
     Name = "${local.tag}-private-subnet3"
+    "kubernetes.io/role/internal-elb" = "1"
   }
 }
 resource "aws_subnet" "subnet_id_8" {
@@ -76,6 +83,7 @@ resource "aws_subnet" "subnet_id_8" {
   availability_zone = var.zone-4
   tags = {
     Name = "${local.tag}-private-subnet4"
+    "kubernetes.io/role/internal-elb" = "1"
   }
 }
 
