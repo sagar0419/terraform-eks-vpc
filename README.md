@@ -14,9 +14,9 @@
 - The ConfigMap required to register Nodes with EKS
 - Kubeconfig file to access the cluster.
 
-##Prerequisite 
+## Prerequisite 
 
-###IAM 
+### IAM 
 
 The AWS credentials must be associated with a user having at least the following AWS managed IAM policies
 
