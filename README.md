@@ -70,6 +70,7 @@ To create infra run the below mention command
 - Setup your <mark>KUBECONFIG</mark>
 - terraform output kubeconfig > ~/.kube/eks-cluster
 - export KUBECONFIG=~/.kube/eks-cluster
+- Edit '~/.kube/eks-cluster' file and remove EOT from begining and end of the file.
 
 ## Authorize users to access the cluster 
 
